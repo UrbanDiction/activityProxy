@@ -12,8 +12,6 @@ app.use(express.static(path.join(__dirname, "/../public")));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-require("./config/routes.js")(app);
-
 app.listen(port, () => {
   if (processArgs.includes("development")) {
     // eslint-disable-next-line
