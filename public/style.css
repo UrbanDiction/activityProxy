@@ -1,0 +1,268 @@
+.def-count {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7425rem;
+  vertical-align: super;
+  background-color: #efff00;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  height: 0%;
+}
+
+.word_title {
+  color: #134fe6;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 129%;
+  text-decoration: none;
+  vertical-align: middle;
+  font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+.example {
+  font-style: italic;
+}
+
+.hash {
+  color: #134fe6;
+  cursor: pointer;
+}
+
+.hash_green:hover {
+  color: #05ff56;
+}
+
+.author {
+  color: #134fe6;
+  cursor: pointer;
+}
+
+.author-date {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+}
+
+.author:hover {
+  color: #05ff56;
+}
+
+.defs {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+  width: 100%;
+}
+
+.single_def {
+  margin-top: 1em;
+}
+
+.tone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: -2em;
+  margin-right: -2em;
+  padding-left: 2em;
+  padding-right: 3em;
+  height: 72px;
+  min-width: 100%;
+  padding-top: 32px;
+  cursor: pointer;
+}
+
+.mug-image {
+  height: 91px;
+  width: 125px;
+  margin-right: 30%;
+  margin-bottom: 35%;
+}
+
+.mug-text {
+  flex: 1;
+  padding-bottom: 30px;
+  align-items: left;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+}
+
+.mug-word {
+  padding: 1px 3px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+}
+
+.upvote-wrapper {
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 20px 0px 0px 20px;
+  border: 1px solid black;
+  box-shadow: 0 2px 0 black;
+  text-align: center;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.upvote-wrapper:hover {
+  background-color: #05ff56;
+}
+
+.downvote-wrapper {
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0px 20px 20px 0px;
+  border: 1px solid black;
+  box-shadow: 0 2px 0 black;
+  text-align: center;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.downvote-wrapper:hover {
+  background-color: #05ff56;
+}
+
+.upvote-img {
+  height: 16px !important;
+  width: 16px !important;
+  margin-left: 15px;
+  margin-bottom: 12px;
+  margin-right: 5px;
+}
+
+.downvote-img {
+  height: 16px !important;
+  width: 16px !important;
+  margin-left: 8px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.clicked {
+  background-color: #05ff56;
+  box-shadow: none;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.social-media {
+  display: flex;
+  flex-flow: row;
+}
+
+.twitter,
+.facebook,
+.share {
+  width: 16px;
+  cursor: pointer;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.twitter:hover {
+  color: #05ff56;
+}
+
+.flag-button {
+  box-shadow: 0 2px 0 black;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px #000 solid;
+  height: 2.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  width: 2.5rem;
+  line-height: 1.3125rem;
+}
+
+.flag-button:hover {
+  background-color: #05ff56;
+}
+
+.elip-button {
+  box-shadow: 0 2px 0 black;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px #000 solid;
+  height: 2.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  width: 2.5rem;
+  line-height: .57rem;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.elip-button:hover {
+  background-color: #05ff56;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.flag-elip {
+  display: flex;
+}
+
+.upvotes {
+  margin-right: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7125rem;
+}
+
+.downvotes {
+  margin-right: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7125rem;
+}
+
+.svg-twitter:hover {
+  fill: lime;
+}
+
+.svg-facebook:hover {
+  fill: lime;
+}
+
+.svg-share:hover {
+  fill: lime;
+}
