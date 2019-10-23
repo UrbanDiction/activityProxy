@@ -1,16 +1,34 @@
 const express = require("express");
 
-const bodyParser = require("body-parser");
-
-const path = require("path");
+const axios = require("axios");
 
 const app = express();
 const port = process.env.PORT || 8000;
 const processArgs = process.argv.slice(2);
 
-app.use(express.static(path.join(__dirname, "/../public")));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.get("/:word", (req, res) => {
+  const { word } = req.params;
+  axios.get(`http://localhost:8002/${word}`).then(({ data }) => {
+    res.send(`<!DOCTYPE html5>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+                  <link href="http://localhost:8002/c3.min.css" rel="stylesheet" />
+                  <title>UrbanDiction</title>
+                </head>
+
+                <body>
+                  ${data}
+                </body>
+                <script src="https://d3js.org/d3.v5.min.js"></script>
+                <script src="http://localhost:8002/c3.min.js"></script>
+                <script src="http://localhost:8002/generateChart.js"></script>
+              </html>
+`);
+  });
+});
 
 app.listen(port, () => {
   if (processArgs.includes("development")) {
